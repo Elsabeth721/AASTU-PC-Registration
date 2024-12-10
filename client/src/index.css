@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+body{
+  background:  #000F1F;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+*{
+  color: var(--text-color);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Default Theme (Bluesh) */
+.bluesh {
+  --bg-color: #000F1F;
+  --text-color: #CCFFFF;
+  --navbar-color: #001F3D;
+  --sidebar-color: #000F1F;
+  --content-color: #000F1F;
+  --button-color : #005F8F;
+}
+
+/* Light Theme */
+.light {
+  --bg-color: #c5c2c2;
+  --text-color: #000000;
+  --navbar-color: #ffffff;
+  --sidebar-color: #F0F0F0;
+  --content-color: #F0F0F0;
+  --button-color : #f11080;
+}
+
+/* Dark Theme */  
+.dark {
+  --bg-color: #141414 ;
+  --text-color: #FFFFFF;
+  --navbar-color:#000000 ;
+  --sidebar-color: #121212;
+  --content-color: #121212;
+  --button-color : #00b3ff;
+}
+
+
+.navbar, .sidebar, .content-section,.Qrpage {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+}
