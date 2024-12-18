@@ -5,9 +5,7 @@ import Services from './service'
 import HowItWorks from './how_it_works'
 import Footer from './footer'
 import AboutUs from './about_us'
-import Features from './Features'
-import Testimonial from './Testimonial'
-import Demo from './demo'
+
 function App() {
  
 
@@ -17,11 +15,7 @@ function App() {
   <LandingPage/>
   <Services/>
   <HowItWorks/>
-  <Demo/>
-  <Features/>
-  <Testimonial/>
   <AboutUs/>
-  
   <Footer/>
   </>)
 }
