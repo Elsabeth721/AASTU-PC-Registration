@@ -92,5 +92,5 @@ class QrCodeController extends Controller
         return response()->json($student);
     }
     //email mail
-//     
+//
 }
