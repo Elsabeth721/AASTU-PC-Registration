@@ -1,0 +1,32 @@
+name: Deploy Landing Page to GitHub Pages
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      # Step 3: Upload landing-page folder
+      - name: Upload landing-page files
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./studentpage
+
+      # Step 4: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
