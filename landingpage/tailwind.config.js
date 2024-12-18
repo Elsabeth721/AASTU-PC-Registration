@@ -7,11 +7,10 @@ export default {
   theme: {
     extend: {
       colors:{
-        background:'#001F3D',
-        navbarBackground: '#000F1F',
+        background:'#36547c',
         buttonBackground:'#49b2e5',
         selectedColor:'#4674a2',
-        titleColor:'#CCFFFF',
+        titleColor:'#edf3fc',
         paragraphColor:'#8da2c0'
       },
       fontFamily:{
